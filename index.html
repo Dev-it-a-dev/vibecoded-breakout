@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI made this game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: /*#f0f0f0*/ #000;
+        }
+        #debugLog {
+            width: 800px;
+            height: 150px;
+            margin: 10px auto;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #333;
+            color: #0f0;
+            font-family: monospace;
+            padding: 10px;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="debugLog"></div>
+    <audio id="hitSound" src="res/Explosion8.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
